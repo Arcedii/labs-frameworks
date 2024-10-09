@@ -4,7 +4,7 @@
 
 ### 1. Вход с неверными данными
 
-при вводе неверных данных сервер ответил
+### при вводе неверных данных сервер ответил
 
 Request URL:
 http://sandbox.usm.md/login/process.php
@@ -65,17 +65,19 @@ x-requested-with:
 XMLHttpRequest
 (Указывает, что запрос был отправлен с использованием AJAX.)
 
-Какие параметры были отправлены в запросе?
+### Какие параметры были отправлены в запросе?
+
 username: admin1212
 password: password121212
 
-Какой код состояния был возвращен сервером?
+### Какой код состояния был возвращен сервером?
+
 Status Code:
 401 Unauthorized
 
-Какие заголовки были отправлены в ответе?
+### Какие заголовки были отправлены в ответе?
 
-Response Headers (Заголовки ответа):
+### Response Headers (Заголовки ответа):
 
 connection: keep-alive
 content-type: text/plain;charset=UTF-8
@@ -83,7 +85,7 @@ date: Wed, 09 Oct 2024 09:45:56 GMT
 server: nginx/1.24.0 (Ubuntu)
 transfer-encoding: chunked
 
-Повторите шаги 3-5, введя верные данные для входа (username: admin, password: password).
+### Повторите шаги 3-5, введя верные данные для входа (username: admin, password: password).
 
 Request URL:
 http://sandbox.usm.md/login/process.php
@@ -132,7 +134,7 @@ Form Data :
 username: admin
 password: password
 
-Задание №2. Составление HTTP-запросов
+### Задание №2. Составление HTTP-запросов
 
 Составьте GET-запрос к серверу по адресу http://sandbox.com, указав в заголовке User-Agent ваше имя и фамилию.
 полсе отправки get запроса с Kye : User Agent и Value : Craciun Dan серверет ответил Status: 200 OK, Date: Wed, 09 Oct 2024 10:27:10 GMT
@@ -151,7 +153,7 @@ Server: cloudflare
 CF-RAY: 8cfdad346ddc5b1f-VIE
 Content-Encoding: br
 
-Составьте POST-запрос к серверу по адресу http://sandbox.com/cars
+### Составьте POST-запрос к серверу по адресу http://sandbox.com/cars
 
 полсе отправки запроса raw
 {
@@ -168,7 +170,7 @@ Key: year, Value: 2020
 
 сервер вернул 404Not Found
 
-Составьте PUT-запрос к серверу
+### Составьте PUT-запрос к серверу
 
 {
 "make": "Toyota",
@@ -178,7 +180,7 @@ Key: year, Value: 2020
 
 404 Not Found
 
-Напишите один из возможных вариантов ответа сервера
+### Напишите один из возможных вариантов ответа сервера
 
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -223,9 +225,9 @@ Server: nginx/1.24.0
 Этот код возвращается, если на сервере произошла внутренняя ошибка во время обработки запроса. Это может быть связано с неправильной конфигурацией сервера или сбоями в программе.
 Пример ситуации: Сервер испытывает проблемы с базой данных или другим внутренним компонентом, когда вы отправляете запрос на обновление данных об автомобиле.
 
-Задание №3. Дополнительное задание. HTTP_Quest
+### Задание №3. Дополнительное задание. HTTP_Quest
 
-Отправьте POST-запрос на сервер по адресу http://sandbox.usm.md/quest, указав в заголовке User-Agent вашу фамилию и имя (Например User-Agent: John Doe).
+## Отправьте POST-запрос на сервер по адресу http://sandbox.usm.md/quest, указав в заголовке User-Agent вашу фамилию и имя (Например User-Agent: John Doe).
 
 /home/devrdn/www/quest/progress/\***\*\*\*\*\*** HEADERS RECEIVED \***\*\*\*\*\***
 Content-Length: 66
@@ -249,7 +251,8 @@ Content-Type: text/plain; charset=UTF-8
 3. token: ChMMNwEQLEU3FSc=
 4. instruction: Send a POST request to http://sandbox.usm.md/quest/login with Authorization: Bearer ChMMNwEQLEU3FSc=
 
-2 шаг
+### 2 шаг
+
 /home/devrdn/www/quest/progress/\***\*\*\*\*\*** HEADERS RECEIVED \***\*\*\*\*\***
 Content-Length: 66
 Connection: keep-alive
@@ -292,7 +295,8 @@ Content-Type: text/plain; charset=UTF-8
 1. Step 2 completed! Now, send a PUT request to http://sandbox.usm.md/quest/age with the request body age=<your age> and with the Authorization header with the token you received in the previous step.
 2. next_step: Send a PUT request to http://sandbox.usm.md/quest/age with age=<your age> in the request body
 
-шаг 3
+### шаг 3
+
 /home/devrdn/www/quest/progress/\***\*\*\*\*\*** HEADERS RECEIVED \***\*\*\*\*\***
 Content-Length: 42
 Connection: keep-alive
